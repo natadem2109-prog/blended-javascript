@@ -6,7 +6,7 @@
 
 // Підказка: prompt завжди повертає рядок (String), тому перед перевіркою
 // перетворіть значення на число за допомогою Number().
-/*
+
 const number = Number(prompt("Введіть число"));
 if (number === 10) {
   alert("Вірно");
@@ -39,7 +39,6 @@ function getQuarter(min) {
   if (min >= 45 && min <= 59) return 'четверта чверть';
   return 'Некоректне число';
 }
-// Виклик
 console.log(getQuarter(10)); // 'перша чверть'
 
 // Змінна num може набувати 4 значення: '1', '2', '3' або '4'
@@ -51,7 +50,7 @@ console.log(getQuarter(10)); // 'перша чверть'
 // введе в prompt щось інше. В такому випадку result має набувати значення:
 // "Вибачте, але ви маєте ввести значення від 1 до 4 включно".
 // Значення змінної result виведіть в консоль.
-/*
+
 const num = prompt("Введіть число від 1 до 4");
 let result;
 
@@ -84,21 +83,20 @@ function getSeason(num) {
   }
   return result;
 }
-// Виклик
 console.log(getSeason('3')); // 'літо'
-*/
+
 // Отримуйте від користувача число (кількість хвилин) через prompt
 // і виводьте у консоль рядок у форматі годин та хвилин.
 // Приклад: користувач вводить в prompt '70' -> в консолі відобразиться '01:10'.
 // Корисне посилання для відображення годин та хвилин у потрібному форматі ('01' замість '1'):
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart#examples
-/*
+
 const minutes = Number(prompt("Введіть кількість хвилин"));
 const hours = Math.floor(minutes / 60);
 const mins = minutes % 60;
 const formattedTime = `${String(hours).padStart(2, '0')}:${String(mins).padStart(2, '0')}`;
 console.log(formattedTime);
-*/
+
 function showTimeFromPrompt() {
   const minutes = Number(prompt("Введіть кількість хвилин"));
   const hours = Math.floor(minutes / 60);
@@ -108,7 +106,7 @@ function showTimeFromPrompt() {
 }
 showTimeFromPrompt();
 
-/*
+
 // Напишіть код, який запитуватиме у користувача
 // логін за допомогою prompt і виводить результат в консоль браузера
 
@@ -123,6 +121,7 @@ showTimeFromPrompt();
 // Якщо введено пароль "Я головний",
 // то вивести в alert рядок "Добрий день!",
 // в іншому випадку вивести в alert рядок "Невірний пароль!"
+
 const login = prompt("Введіть логін");
 
 if (login === "Адмін") {
@@ -149,7 +148,6 @@ function loginCheck(login, passwordCallback) {
   if (password === null || password === '') return 'Скасовано';
   return password === 'Я головний' ? 'Добрий день!' : 'Невірний пароль!';
 }
-// Виклик
 console.log(loginCheck('Адмін', () => 'Я головний')); // 'Добрий день!'
 
 // Використайте цикл while, щоб вивести в console всі числа від 0 до 20 включно.
@@ -166,16 +164,15 @@ function printNumbersTo20() {
     i++;
   }
 }
-
-// Виклик
 printNumbersTo20();
 
-// Напишіть функцію getNumbers(min, max), що приймає 2 параметри - 
+// Напишіть функцію getNumbers(min, max), що приймає 2 параметри -
 // мінімальне і максимальне число відповідно.
 // Напишіть цикл всередині функції, який виводить у консоль
 // всі числа від max до min за спаданням.
 // Окрім цього, підрахуйте суму всіх парних чисел в цьому циклі
 // і поверніть її з функції.
+
 function getNumbers(min, max) {
   let sum = 0;
   for (let i = max; i >= min; i--) {
@@ -186,9 +183,11 @@ function getNumbers(min, max) {
   }
   return sum;
 }
+
 // Напишіть функцію min(a, b), яка приймає 2 числа і повертає меньше з них.
 // Потрібно додати перевірку, що функція отримує саме числа, в іншому випадку
 // повертати з функції рядок - 'Not a number!'.
+
 function min(a, b) {
   if (typeof a !== 'number' || typeof b !== 'number' || Number.isNaN(a) || Number.isNaN(b)) {
     return 'Not a number!';
@@ -196,10 +195,11 @@ function min(a, b) {
   return a < b ? a : b;
 }
 
-// Напишіть функцію isAdult(age), яка  приймає число - вік користувача і повертає true, 
+// Напишіть функцію isAdult(age), яка  приймає число - вік користувача і повертає true,
 // якщо параметр age більше чи дорівнює 18.
-// В іншому випадку вона запитує підтвердження через confirm 
+// В іншому випадку вона запитує підтвердження через confirm
 // і повертає його результат (true/false).
+
 function isAdult(age) {
   if (age >= 18) {
     return true;
@@ -212,6 +212,7 @@ function isAdult(age) {
 // Якщо число ділитися  без остачі на 3 - виводить в консоль 'fizz',
 // якщо ділиться  без остачі на 5 - виводить в консоль 'buzz',
 // якщо ділиться  без остачі і на 3, і на 5 - виводить в консоль 'fizzbuzz'.
+
 function fizzBuzz(num) {
   for (let i = 1; i <= num; i++) {
     console.log(
@@ -222,4 +223,3 @@ function fizzBuzz(num) {
     );
   }
 }
-*/
