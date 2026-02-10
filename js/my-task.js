@@ -112,3 +112,66 @@ const repairBots = 150;
 const defenceBots = 50;
 const message = `${companyName} has ${repairBots} repair bots and ${defenceBots} defence bots.`;
 console.log(message);
+
+
+/*Задача-1
+Напишіть функцію яка приймає два параметри str1 та str2. 
+Функція повинна повернути булеве значення true якщо перша літера str1 дорівнює останій літері str2. 
+В іншому випадку функція повинна повернути булеве значення false.*/
+
+function multiply(str1, str2)
+{
+    return str1[0] === str2[str2.length - 1];  
+}
+console.log(multiply("hello", "piano"));
+
+/*Задача-3
+Напишіть функцію яка приймає два параметри str1 та str2. 
+Функція повинна повернути булеве значення true якщо довжина str1 дорівнює довжині str2. 
+В іншому випадку функція повинна повернути булеве значення false.*/
+
+function rose(str1, str2) {
+    return str1.length === str2.length;
+    
+}
+console.log(rose("banana", "any"));
+
+/*Напишіть функцію яка приймає число num. 
+Функція повинна повернути булеве значення true якщо кількість цифр у числі парна. 
+В іншому випадку функція повинна повернути булеве значення false.*/
+
+function trio(num) {
+     return String(Math.abs(num)).length % 2 === 0;
+}
+console.log(trio(20));
+
+/*Напишіть функцію, яка приймає два параметри num1 та num2. 
+Функція повинна повернути булеве значення true, якщо num1 більше, ніж num2. 
+В іншому випадку функція повинна повернути булеве значення false.*/
+
+function dnipro(num1, num2) {
+    return num1 > num2;
+    
+}
+console.log(dnipro(10,25));
+console.log(dnipro(25, 10));
+
+/*Напишіть функцію, яка приймає два параметри num1 та num2. 
+Функція повинна повернути булеве значення true, якщо num1 ділиться на num2 без остачі. 
+В іншому випадку функція повинна повернути булеве значення false.*/
+
+function air(num1, num2) {
+    return num1 % num2 === 0;
+    
+}
+console.log(air(10, 2));
+
+/*Напишіть функцію, яка приймає число num. 
+Функція повинна повернути булеве значення true, якщо num є непарним числом. 
+В іншому випадку функція повинна повернути булеве значення false.*/
+
+function mega(num) {
+    return num % 2 !== 0;
+    
+}
+console.log(mega(26));
