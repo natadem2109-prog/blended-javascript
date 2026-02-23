@@ -175,3 +175,4 @@ function mega(num) {
     
 }
 console.log(mega(26));
+
